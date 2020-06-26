@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,931 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UJO-17-SrQ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QCp-iB-l8n">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="7680"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a7l-jR-kq5" userLabel="Allyship Dictionary">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="600"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="mct-gO-up1">
+                                                        <rect key="frame" x="-41" y="36" width="496" height="128"/>
+                                                        <color key="backgroundColor" red="0.9433959126" green="0.25474584099999997" blue="0.25733557340000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="tintColor" red="0.9433959126" green="0.25474584099999997" blue="0.25733557340000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="131" id="HYI-Vg-dko"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nK0-wG-VJA">
+                                                        <rect key="frame" x="37" y="187" width="340" height="162.33333333333337"/>
+                                                        <string key="text">This dictionary provides 15 key-terms to learn as an ally. It is important to know the meaning of these words and phrases as they are prominent in the Black Lives Matter movement and LGBTQ+ community. Use this dictionary to educate yourself and others, and to reference back to as you grow as an ally.</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="1" green="0.97407053789999998" blue="0.85029081220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allyship Dictionary" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghc-kW-AWy">
+                                                        <rect key="frame" x="0.0" y="54" width="414" height="93"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="93" id="tRp-pi-O8Y"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                        <color key="textColor" red="0.56344014409999998" green="0.033077754080000001" blue="0.038768012079999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.down.doc" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="6H7-wn-Pol">
+                                                        <rect key="frame" x="163" y="357.66666666666663" width="89" height="108"/>
+                                                        <color key="tintColor" red="0.56344014409999998" green="0.033077754080000001" blue="0.038768012079999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="108.33" id="VrV-Hi-hPL"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xK2-Wj-eIj">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                        <color key="barTintColor" red="1" green="0.97407053789999998" blue="0.85029081220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <items>
+                                                            <navigationItem title="PocketAlly" id="9wo-bW-8ZN">
+                                                                <barButtonItem key="leftBarButtonItem" title="Item" image="house.fill" catalog="system" id="Ak3-Gy-clv">
+                                                                    <color key="tintColor" red="0.56344014409999998" green="0.033077754080000001" blue="0.038768012079999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </barButtonItem>
+                                                            </navigationItem>
+                                                        </items>
+                                                    </navigationBar>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.93131631609999999" green="0.32936282800012195" blue="0.38774109335176393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="ghc-kW-AWy" secondAttribute="trailing" id="1dX-Qy-9Jh"/>
+                                                    <constraint firstItem="ghc-kW-AWy" firstAttribute="top" secondItem="a7l-jR-kq5" secondAttribute="top" constant="54" id="9Wa-Sc-baT"/>
+                                                    <constraint firstAttribute="height" constant="600" id="DIL-JS-NDd"/>
+                                                    <constraint firstItem="6H7-wn-Pol" firstAttribute="leading" secondItem="a7l-jR-kq5" secondAttribute="leading" constant="163" id="IgI-oe-Jcb"/>
+                                                    <constraint firstAttribute="trailing" secondItem="nK0-wG-VJA" secondAttribute="trailing" constant="37" id="JeO-vw-tKq"/>
+                                                    <constraint firstItem="ghc-kW-AWy" firstAttribute="leading" secondItem="a7l-jR-kq5" secondAttribute="leading" id="KQp-Z2-Gq5"/>
+                                                    <constraint firstItem="mct-gO-up1" firstAttribute="top" secondItem="a7l-jR-kq5" secondAttribute="top" constant="34.329999999999998" id="OMX-8f-2YG"/>
+                                                    <constraint firstItem="nK0-wG-VJA" firstAttribute="top" secondItem="ghc-kW-AWy" secondAttribute="bottom" constant="40" id="TRU-Ez-4gc"/>
+                                                    <constraint firstAttribute="trailing" secondItem="mct-gO-up1" secondAttribute="trailing" constant="-41" id="UQv-OM-Xrq"/>
+                                                    <constraint firstItem="nK0-wG-VJA" firstAttribute="leading" secondItem="a7l-jR-kq5" secondAttribute="leading" constant="37" id="Vlg-TZ-KMo"/>
+                                                    <constraint firstAttribute="trailing" secondItem="6H7-wn-Pol" secondAttribute="trailing" constant="162" id="a8i-y4-y4t"/>
+                                                    <constraint firstItem="6H7-wn-Pol" firstAttribute="top" secondItem="nK0-wG-VJA" secondAttribute="bottom" constant="8.0000000000000568" id="coZ-qH-BdM"/>
+                                                    <constraint firstItem="mct-gO-up1" firstAttribute="leading" secondItem="a7l-jR-kq5" secondAttribute="leading" constant="-41" id="kLE-W6-UVA"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NGh-9q-YBe">
+                                                <rect key="frame" x="0.0" y="600" width="414" height="500"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AD6-ED-a2y">
+                                                        <rect key="frame" x="8" y="69" width="398" height="313"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="313" id="iae-Vf-cBF"/>
+                                                        </constraints>
+                                                        <string key="text">An ally is someone who makes the commitment and effort to recognize their privilege (based on gender, class, race, sexual identity, etc.) and work in solidarity with oppressed groups in the struggle for justice. Allies understand that it is in their own interest to end all forms of oppression, even those from which they may benefit in concrete ways. 
+Allies commit to reducing their own complicity or collusion in the oppression of those groups and invest in strengthening their own knowledge and awareness of it. True allyship is about taking issues of racism or oppression that may not directly affect your yourself up as your cause and doing the work to dismantle them. </string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <color key="textColor" red="1" green="0.97407053789999998" blue="0.85029081220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is an Ally?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j2i-T7-IAI">
+                                                        <rect key="frame" x="0.0" y="8" width="414" height="53"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="53" id="it9-66-4Vy"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="0.9433959126" green="0.25474584099999997" blue="0.25733557340000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5d4-2A-JsR">
+                                                        <rect key="frame" x="8" y="398" width="398" height="94"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="94" id="Fzu-Un-xt2"/>
+                                                        </constraints>
+                                                        <string key="text">SOURCE:
+1. The Huffington Post, “What Does 'Systemic Racism' Mean? 20 Terms To Help You Understand Allyship”
+2. OpenSource Leadership Strategies, “The Dynamic System of Power, Privilege and Oppressions.”
+3. Center for Assessment and Policy Development.
+</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                        <color key="textColor" red="0.81973870746315791" green="0.45122584940521127" blue="0.10071667189919888" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.92846894260000001" green="0.60200011730000003" blue="0.29061165449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.99933081869999996" green="0.66954147819999998" blue="0.2523943186" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="AD6-ED-a2y" firstAttribute="leading" secondItem="NGh-9q-YBe" secondAttribute="leading" constant="8" id="3T5-cT-PNO"/>
+                                                    <constraint firstAttribute="trailing" secondItem="j2i-T7-IAI" secondAttribute="trailing" id="7NX-zB-5jV"/>
+                                                    <constraint firstItem="AD6-ED-a2y" firstAttribute="top" secondItem="j2i-T7-IAI" secondAttribute="bottom" constant="8" id="8jo-IR-lM6"/>
+                                                    <constraint firstItem="5d4-2A-JsR" firstAttribute="leading" secondItem="NGh-9q-YBe" secondAttribute="leading" constant="8" id="Cs2-ZG-TWP"/>
+                                                    <constraint firstAttribute="height" constant="500" id="Fsr-lT-7nb"/>
+                                                    <constraint firstAttribute="trailing" secondItem="AD6-ED-a2y" secondAttribute="trailing" constant="8" id="U9P-eO-Zwf"/>
+                                                    <constraint firstItem="j2i-T7-IAI" firstAttribute="leading" secondItem="NGh-9q-YBe" secondAttribute="leading" id="V57-nr-UmO"/>
+                                                    <constraint firstItem="j2i-T7-IAI" firstAttribute="top" secondItem="NGh-9q-YBe" secondAttribute="top" constant="8" id="b8T-Rs-KAB"/>
+                                                    <constraint firstItem="5d4-2A-JsR" firstAttribute="top" secondItem="AD6-ED-a2y" secondAttribute="bottom" constant="16" id="sYl-1y-EG6"/>
+                                                    <constraint firstAttribute="trailing" secondItem="5d4-2A-JsR" secondAttribute="trailing" constant="8" id="ySR-OO-ndh"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Ln-Z4-S0J">
+                                                <rect key="frame" x="0.0" y="1100" width="414" height="440"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WwT-LA-WoA">
+                                                        <rect key="frame" x="8" y="69" width="398" height="281"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="281" id="SNW-7E-TNV"/>
+                                                        </constraints>
+                                                        <string key="text">A.C.A.B. is an acronym meaning "All Cops Are Bastards". It is used as a slogan and written catchphrase in graffiti, tattoos, and other imagery. It is sometimes numerically rendered as "1312", after the alphabetic order of the letters. The slogan is associated with dissidents subjected to political persecution and police brutality.
+
+The intent of this the term may refer to the police as an institution, and does not necessarily reflect upon the individual law enforcement officer. Its use is a response to police actions that have historically been seen as abusive, obnoxious, corrupt, and vindictive.</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <color key="textColor" red="1" green="0.97407053789999998" blue="0.85029081220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A.C.A.B." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NT9-LX-sjI">
+                                                        <rect key="frame" x="0.0" y="8" width="414" height="53"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="53" id="HHE-aQ-L8h"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="0.9433959126" green="0.25474584099999997" blue="0.25733557340000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mwl-hr-5AJ">
+                                                        <rect key="frame" x="8" y="358" width="398" height="94"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="94" id="KaR-yX-rkc"/>
+                                                        </constraints>
+                                                        <string key="text">SOURCE:
+1. Terry Victor; Tom Dalzell (2007). The Concise New Partridge Dictionary of Slang and Unconventional English. Routledge. p. 2. ISBN 978-1-134-61534-6.
+2. "ACAB: All Cops Are ... Bounded". Workers Solidarity Movement. 16 February 2015. Retrieved 14 May 2020.
+</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                        <color key="textColor" red="0.8197387075" green="0.45122584939999999" blue="0.1007166719" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.92846894260000001" green="0.60200011730000003" blue="0.29061165449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.99933081869999996" green="0.66954147819999998" blue="0.2523943186" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="Mwl-hr-5AJ" firstAttribute="leading" secondItem="9Ln-Z4-S0J" secondAttribute="leading" constant="8" id="1oD-CS-7XB"/>
+                                                    <constraint firstAttribute="height" constant="440" id="T6D-LQ-cdq"/>
+                                                    <constraint firstItem="WwT-LA-WoA" firstAttribute="top" secondItem="NT9-LX-sjI" secondAttribute="bottom" constant="8" id="WgC-hB-1yq"/>
+                                                    <constraint firstAttribute="trailing" secondItem="NT9-LX-sjI" secondAttribute="trailing" id="aUJ-0d-wtw"/>
+                                                    <constraint firstItem="WwT-LA-WoA" firstAttribute="leading" secondItem="9Ln-Z4-S0J" secondAttribute="leading" constant="8" id="ald-TO-ckt"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Mwl-hr-5AJ" secondAttribute="trailing" constant="8" id="prV-PQ-WMD"/>
+                                                    <constraint firstItem="NT9-LX-sjI" firstAttribute="leading" secondItem="9Ln-Z4-S0J" secondAttribute="leading" id="qnp-rA-vde"/>
+                                                    <constraint firstAttribute="trailing" secondItem="WwT-LA-WoA" secondAttribute="trailing" constant="8" id="rHf-o1-naw"/>
+                                                    <constraint firstItem="NT9-LX-sjI" firstAttribute="top" secondItem="9Ln-Z4-S0J" secondAttribute="top" constant="8" id="y9K-at-Vbw"/>
+                                                    <constraint firstItem="Mwl-hr-5AJ" firstAttribute="top" secondItem="WwT-LA-WoA" secondAttribute="bottom" constant="8" id="zyE-Mu-frX"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c13-Xo-Q93">
+                                                <rect key="frame" x="0.0" y="1540" width="414" height="600"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYi-BT-TSb">
+                                                        <rect key="frame" x="8" y="69" width="398" height="442"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="442" id="95C-e9-zep"/>
+                                                        </constraints>
+                                                        <string key="text">In the context of racial equity work, accountability refers to the ways in which individuals and communities hold themselves to their goals and actions, and acknowledge the values and groups to which they are responsible. 
+
+To be accountable, one must be visible, with a transparent agenda and process. Invisibility defies examination; it is, in fact, employed in order to avoid detection and examination. Accountability demands commitment. It might be defined as “what kicks in when convenience runs out.” Accountability requires some sense of urgency and becoming a true stakeholder in the outcome. Accountability can be externally imposed (legal or organizational requirements), or internally applied (moral, relational, faith-based, or recognized as some combination of the two) on a continuum from the institutional and organizational level to the individual level. From a relational point of view, accountability is not always doing it right. Sometimes it’s really about what happens after it’s done wrong.</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <color key="textColor" red="1" green="0.97407053789999998" blue="0.85029081220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accountability" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IW2-vf-897">
+                                                        <rect key="frame" x="0.0" y="8" width="414" height="53"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="53" id="ANo-dV-W93"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="0.9433959126" green="0.25474584099999997" blue="0.25733557340000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QlC-T8-ryn">
+                                                        <rect key="frame" x="8" y="519" width="398" height="94"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="94" id="tDg-Lg-8ns"/>
+                                                        </constraints>
+                                                        <string key="text">SOURCE:
+1. Accountability and White Anti-Racist Organizing: Stories from Our Work, Bonnie Berman Cushing with Lila Cabbil, Margery Freeman, Jeff Hitchcock and Kimberly Richards
+</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                        <color key="textColor" red="0.8197387075" green="0.45122584939999999" blue="0.1007166719" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.92846894260000001" green="0.60200011730000003" blue="0.29061165449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.99933081869999996" green="0.66954147819999998" blue="0.2523943186" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="aYi-BT-TSb" firstAttribute="top" secondItem="IW2-vf-897" secondAttribute="bottom" constant="8" id="0LY-Ld-Gxt"/>
+                                                    <constraint firstAttribute="height" constant="600" id="1ri-lp-Et5"/>
+                                                    <constraint firstItem="IW2-vf-897" firstAttribute="leading" secondItem="c13-Xo-Q93" secondAttribute="leading" id="APS-SM-XQ6"/>
+                                                    <constraint firstItem="aYi-BT-TSb" firstAttribute="leading" secondItem="c13-Xo-Q93" secondAttribute="leading" constant="8" id="HPS-Og-3GY"/>
+                                                    <constraint firstItem="IW2-vf-897" firstAttribute="top" secondItem="c13-Xo-Q93" secondAttribute="top" constant="8" id="K5b-1M-5Ch"/>
+                                                    <constraint firstAttribute="trailing" secondItem="IW2-vf-897" secondAttribute="trailing" id="Kzo-zM-i7l"/>
+                                                    <constraint firstAttribute="trailing" secondItem="aYi-BT-TSb" secondAttribute="trailing" constant="8" id="NHs-lZ-wwZ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="QlC-T8-ryn" secondAttribute="trailing" constant="8" id="NQ5-d0-cF0"/>
+                                                    <constraint firstItem="QlC-T8-ryn" firstAttribute="leading" secondItem="c13-Xo-Q93" secondAttribute="leading" constant="8" id="YEh-9T-j5c"/>
+                                                    <constraint firstItem="QlC-T8-ryn" firstAttribute="top" secondItem="aYi-BT-TSb" secondAttribute="bottom" constant="8" id="q2u-xJ-Rtc"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ovp-cj-51S">
+                                                <rect key="frame" x="0.0" y="2140" width="414" height="370"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vy3-xn-Ub5">
+                                                        <rect key="frame" x="8" y="69" width="398" height="209"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="209" id="GMK-to-FP9"/>
+                                                        </constraints>
+                                                        <string key="text">Rather than simply not being racist, being anti-racist is an active state of working to make things better by dismantling racist structures, fighting oppression and working towards justice. According to the Alberta Civil Liberties Research Centre, “Anti-racism is an active way of seeing and being in the world, in order to transform it.” It’s about working in your workplace, school, community and other areas of society to actively challenge racism.</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <color key="textColor" red="1" green="0.97407053789999998" blue="0.85029081220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anti-racism" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8S-8z-yYh">
+                                                        <rect key="frame" x="0.0" y="8" width="414" height="53"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="53" id="iKO-Mb-krM"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="0.9433959126" green="0.25474584099999997" blue="0.25733557340000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JIQ-qd-sbz">
+                                                        <rect key="frame" x="8" y="286" width="398" height="94"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="94" id="wwD-Gv-WtM"/>
+                                                        </constraints>
+                                                        <string key="text">SOURCE:
+1. The Huffington Post, “What Does 'Systemic Racism' Mean? 20 Terms To Help You Understand Allyship”</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                        <color key="textColor" red="0.8197387075" green="0.45122584939999999" blue="0.1007166719" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.92846894260000001" green="0.60200011730000003" blue="0.29061165449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.99933081869999996" green="0.66954147819999998" blue="0.2523943186" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="JIQ-qd-sbz" firstAttribute="top" secondItem="Vy3-xn-Ub5" secondAttribute="bottom" constant="8" id="5lo-iR-uYR"/>
+                                                    <constraint firstAttribute="trailing" secondItem="JIQ-qd-sbz" secondAttribute="trailing" constant="8" id="AdA-sH-KVw"/>
+                                                    <constraint firstItem="JIQ-qd-sbz" firstAttribute="leading" secondItem="ovp-cj-51S" secondAttribute="leading" constant="8" id="F0O-8Q-gb6"/>
+                                                    <constraint firstItem="e8S-8z-yYh" firstAttribute="top" secondItem="ovp-cj-51S" secondAttribute="top" constant="8" id="HNj-HD-x2v"/>
+                                                    <constraint firstItem="Vy3-xn-Ub5" firstAttribute="top" secondItem="e8S-8z-yYh" secondAttribute="bottom" constant="8" id="X4O-5Y-Tu6"/>
+                                                    <constraint firstItem="e8S-8z-yYh" firstAttribute="leading" secondItem="ovp-cj-51S" secondAttribute="leading" id="fSU-z4-DVr"/>
+                                                    <constraint firstItem="Vy3-xn-Ub5" firstAttribute="leading" secondItem="ovp-cj-51S" secondAttribute="leading" constant="8" id="iae-Y6-mAi"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Vy3-xn-Ub5" secondAttribute="trailing" constant="8" id="osx-jL-RuE"/>
+                                                    <constraint firstAttribute="trailing" secondItem="e8S-8z-yYh" secondAttribute="trailing" id="wDN-Iw-D8Y"/>
+                                                    <constraint firstAttribute="height" constant="370" id="xry-q6-WQp"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pUG-GU-OZd">
+                                                <rect key="frame" x="0.0" y="2510" width="414" height="515"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osd-HF-bpJ">
+                                                        <rect key="frame" x="8" y="69" width="398" height="357"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="357" id="1fA-1Z-vTC"/>
+                                                        </constraints>
+                                                        <string key="text">A political movement to address systemic and state violence against African Americans. Per the Black Lives Matter organizers: “In 2013, three radical Black organizers—Alicia Garza, Patrisse Cullors, and Opal Tometi—created a Black-centered political will and movement building project called #BlackLivesMatter. It was in response to the acquittal of Trayvon Martin’s murderer, George Zimmerman. [Black Lives Matter] members organize and build local power to intervene in violence inflicted on Black communities by the state and vigilantes. Black Lives Matter is an ideological and political intervention in a world where Black lives are systematically and intentionally targeted for demise. It is an affirmation of Black folks’ humanity, our contributions to this society, and our resilience in the face of deadly oppression.” </string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <color key="textColor" red="1" green="0.97407053789999998" blue="0.85029081220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Black Lives Matter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iO1-1W-GUU">
+                                                        <rect key="frame" x="0.0" y="8" width="414" height="53"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="53" id="Lfe-hd-fmN"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="0.9433959126" green="0.25474584099999997" blue="0.25733557340000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="82c-yd-xeY">
+                                                        <rect key="frame" x="8" y="434" width="398" height="94"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="94" id="bSL-3B-W0h"/>
+                                                        </constraints>
+                                                        <string key="text">SOURCE:
+1. Black Lives Matter, “Herstory” </string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                        <color key="textColor" red="0.8197387075" green="0.45122584939999999" blue="0.1007166719" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.92846894260000001" green="0.60200011730000003" blue="0.29061165449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.99933081869999996" green="0.66954147819999998" blue="0.2523943186" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="82c-yd-xeY" firstAttribute="top" secondItem="osd-HF-bpJ" secondAttribute="bottom" constant="8" id="2hp-5h-oOc"/>
+                                                    <constraint firstItem="iO1-1W-GUU" firstAttribute="top" secondItem="pUG-GU-OZd" secondAttribute="top" constant="8" id="3uR-HM-XG3"/>
+                                                    <constraint firstAttribute="height" constant="515" id="7sT-3U-CBU"/>
+                                                    <constraint firstAttribute="trailing" secondItem="osd-HF-bpJ" secondAttribute="trailing" constant="8" id="8Tm-e8-Pvn"/>
+                                                    <constraint firstItem="iO1-1W-GUU" firstAttribute="leading" secondItem="pUG-GU-OZd" secondAttribute="leading" id="Bvl-vg-gil"/>
+                                                    <constraint firstAttribute="trailing" secondItem="82c-yd-xeY" secondAttribute="trailing" constant="8" id="Jkx-1Z-k9E"/>
+                                                    <constraint firstAttribute="trailing" secondItem="iO1-1W-GUU" secondAttribute="trailing" id="OsV-HF-QKa"/>
+                                                    <constraint firstItem="osd-HF-bpJ" firstAttribute="leading" secondItem="pUG-GU-OZd" secondAttribute="leading" constant="8" id="baK-Y6-p5w"/>
+                                                    <constraint firstItem="osd-HF-bpJ" firstAttribute="top" secondItem="iO1-1W-GUU" secondAttribute="bottom" constant="8" id="gh9-Xd-8Z2"/>
+                                                    <constraint firstItem="82c-yd-xeY" firstAttribute="leading" secondItem="pUG-GU-OZd" secondAttribute="leading" constant="8" id="io3-e4-Sjk"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pCd-cX-ROL">
+                                                <rect key="frame" x="0.0" y="3025" width="414" height="570"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJT-xY-W0v">
+                                                        <rect key="frame" x="8" y="69" width="398" height="408"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="408" id="yfh-TO-4P7"/>
+                                                        </constraints>
+                                                        <string key="text">Theft of cultural elements for one’s own use, commodification, or profit — including symbols, art, language, customs, etc. — often without understanding, acknowledgement, or respect for its value in the original culture. Results from the assumption of a dominant (i.e. white) culture’s right to take other cultural elements.
+
+What is cultural appropriation vs. appreciation?  Debates rage about what differentiates cultural appropriation from cultural appreciation — some say appropriation doesn't exist because no culture is completely original and uninfluenced. Others believe musicians and designers get a pass because they are creating art that is open to discussion and interpretation. The key to expressing appreciation rather than appropriation is to understand the culture you're borrowing from, including its history of oppression and marginalization.</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <color key="textColor" red="1" green="0.97407053789999998" blue="0.85029081220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cultural Appropriation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPG-na-GYk">
+                                                        <rect key="frame" x="0.0" y="8" width="414" height="53"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="53" id="Fm7-Aa-64A"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="0.9433959126" green="0.25474584099999997" blue="0.25733557340000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K8z-XK-ZW8">
+                                                        <rect key="frame" x="8" y="485" width="398" height="94"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="94" id="MiU-KC-4iN"/>
+                                                        </constraints>
+                                                        <string key="text">SOURCE:
+1. “Colors of Resistance Archive” 
+2. Good Housekeeping, “What Is Cultural Appropriation Exactly, and How Do I Avoid It?”</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                        <color key="textColor" red="0.8197387075" green="0.45122584939999999" blue="0.1007166719" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.92846894260000001" green="0.60200011730000003" blue="0.29061165449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.99933081869999996" green="0.66954147819999998" blue="0.2523943186" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="K8z-XK-ZW8" firstAttribute="top" secondItem="xJT-xY-W0v" secondAttribute="bottom" constant="8" id="7GR-la-8ZP"/>
+                                                    <constraint firstAttribute="height" constant="570" id="9HY-rF-42Z"/>
+                                                    <constraint firstItem="QPG-na-GYk" firstAttribute="leading" secondItem="pCd-cX-ROL" secondAttribute="leading" id="BCd-MB-KRn"/>
+                                                    <constraint firstAttribute="trailing" secondItem="K8z-XK-ZW8" secondAttribute="trailing" constant="8" id="CIl-le-P0i"/>
+                                                    <constraint firstItem="xJT-xY-W0v" firstAttribute="leading" secondItem="pCd-cX-ROL" secondAttribute="leading" constant="8" id="MqX-LJ-St1"/>
+                                                    <constraint firstAttribute="trailing" secondItem="QPG-na-GYk" secondAttribute="trailing" id="TjK-al-Z8p"/>
+                                                    <constraint firstItem="xJT-xY-W0v" firstAttribute="top" secondItem="QPG-na-GYk" secondAttribute="bottom" constant="8" id="Ttg-PD-Rh3"/>
+                                                    <constraint firstItem="K8z-XK-ZW8" firstAttribute="leading" secondItem="pCd-cX-ROL" secondAttribute="leading" constant="8" id="WPg-68-GHM"/>
+                                                    <constraint firstItem="QPG-na-GYk" firstAttribute="top" secondItem="pCd-cX-ROL" secondAttribute="top" constant="8" id="lYQ-vD-1C1"/>
+                                                    <constraint firstAttribute="trailing" secondItem="xJT-xY-W0v" secondAttribute="trailing" constant="8" id="o6P-Lt-mJh"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iht-rx-ZyC">
+                                                <rect key="frame" x="0.0" y="3595" width="414" height="490"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sx1-ln-Mut">
+                                                        <rect key="frame" x="8" y="69" width="398" height="313"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="313" id="7ls-A4-JDT"/>
+                                                        </constraints>
+                                                        <string key="text">The unequal treatment of members of various groups based on race, gender, social class, sexual orientation, physical ability, religion and other categories.
+[In the United States] the law makes it illegal to discriminate against someone on the basis of race, color, religion, national origin, or sex. The law also makes it illegal to retaliate against a person because the person complained about discrimination, filed a charge of discrimination, or participated in an employment discrimination investigation or lawsuit. The law also requires that employers reasonably accommodate applicants' and employees' sincerely held religious practices, unless doing so would impose an undue hardship on the operation of the employer's business.</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <color key="textColor" red="1" green="0.97407053789999998" blue="0.85029081220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discrimination" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x2D-hw-hxn">
+                                                        <rect key="frame" x="0.0" y="8" width="414" height="53"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="53" id="Bvy-uC-uRh"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="0.9433959126" green="0.25474584099999997" blue="0.25733557340000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ac-9q-5zh">
+                                                        <rect key="frame" x="8" y="398" width="398" height="94"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="94" id="5Nl-Pk-byx"/>
+                                                        </constraints>
+                                                        <string key="text">SOURCE:
+1. Institute for Democratic Renewal and Project Change Anti-Racism Initiative. A Community Builder's Tool Kit.
+2. U.S. Equal Employment Opportunity Commission, “Laws Enforced by EEOC” Accessed June 28 2013</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                        <color key="textColor" red="0.8197387075" green="0.45122584939999999" blue="0.1007166719" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.92846894260000001" green="0.60200011730000003" blue="0.29061165449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.99933081869999996" green="0.66954147819999998" blue="0.2523943186" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="4Ac-9q-5zh" firstAttribute="top" secondItem="sx1-ln-Mut" secondAttribute="bottom" constant="16" id="4Nl-w7-854"/>
+                                                    <constraint firstAttribute="trailing" secondItem="x2D-hw-hxn" secondAttribute="trailing" id="6Lb-CV-WCz"/>
+                                                    <constraint firstItem="x2D-hw-hxn" firstAttribute="top" secondItem="iht-rx-ZyC" secondAttribute="top" constant="8" id="Ce3-KC-pb2"/>
+                                                    <constraint firstAttribute="trailing" secondItem="4Ac-9q-5zh" secondAttribute="trailing" constant="8" id="FAP-ye-DbE"/>
+                                                    <constraint firstItem="sx1-ln-Mut" firstAttribute="top" secondItem="x2D-hw-hxn" secondAttribute="bottom" constant="8" id="L1O-5A-6lH"/>
+                                                    <constraint firstAttribute="trailing" secondItem="sx1-ln-Mut" secondAttribute="trailing" constant="8" id="aVH-ye-i8u"/>
+                                                    <constraint firstItem="4Ac-9q-5zh" firstAttribute="leading" secondItem="iht-rx-ZyC" secondAttribute="leading" constant="8" id="jgu-jM-JLf"/>
+                                                    <constraint firstAttribute="height" constant="490" id="pGI-0A-Fnh"/>
+                                                    <constraint firstItem="x2D-hw-hxn" firstAttribute="leading" secondItem="iht-rx-ZyC" secondAttribute="leading" id="vUE-VD-87q"/>
+                                                    <constraint firstItem="sx1-ln-Mut" firstAttribute="leading" secondItem="iht-rx-ZyC" secondAttribute="leading" constant="8" id="yO6-yo-CuA"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HvB-5k-pU9">
+                                                <rect key="frame" x="0.0" y="4085" width="414" height="300"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2bu-W9-p6c">
+                                                        <rect key="frame" x="8" y="69" width="398" height="142"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="142" id="g6V-jL-pww"/>
+                                                        </constraints>
+                                                        <string key="text">The acronym for “lesbian, gay, bisexual, transgender and queer.” Some people also use the Q to stand for "questioning," meaning people who are figuring out their sexual orientation or gender identity. You may also see LGBT+, LGBT*, LGBTx, or LGBTQIA. I stands for intersex and A for asexual/aromantic/agender.</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <color key="textColor" red="1" green="0.97407053789999998" blue="0.85029081220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LGBTQ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qPs-2i-QwQ">
+                                                        <rect key="frame" x="0.0" y="8" width="414" height="53"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="53" id="aHV-eR-3tb"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="0.9433959126" green="0.25474584099999997" blue="0.25733557340000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mXP-fb-0ST">
+                                                        <rect key="frame" x="8" y="219" width="398" height="94"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="94" id="o73-Ur-MYl"/>
+                                                        </constraints>
+                                                        <string key="text">SOURCE:
+1. USA Today, “LGBTQ definitions every good ally should know”</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                        <color key="textColor" red="0.8197387075" green="0.45122584939999999" blue="0.1007166719" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.92846894260000001" green="0.60200011730000003" blue="0.29061165449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.99933081869999996" green="0.66954147819999998" blue="0.2523943186" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="mXP-fb-0ST" secondAttribute="trailing" constant="8" id="2gz-HT-PPQ"/>
+                                                    <constraint firstItem="2bu-W9-p6c" firstAttribute="leading" secondItem="HvB-5k-pU9" secondAttribute="leading" constant="8" id="8hb-T5-Bjv"/>
+                                                    <constraint firstItem="2bu-W9-p6c" firstAttribute="top" secondItem="qPs-2i-QwQ" secondAttribute="bottom" constant="8" id="Avq-UQ-sLC"/>
+                                                    <constraint firstAttribute="trailing" secondItem="2bu-W9-p6c" secondAttribute="trailing" constant="8" id="GYN-dL-t5k"/>
+                                                    <constraint firstItem="mXP-fb-0ST" firstAttribute="top" secondItem="2bu-W9-p6c" secondAttribute="bottom" constant="8" id="KU2-48-SY9"/>
+                                                    <constraint firstItem="mXP-fb-0ST" firstAttribute="leading" secondItem="HvB-5k-pU9" secondAttribute="leading" constant="8" id="SUA-kg-txE"/>
+                                                    <constraint firstAttribute="trailing" secondItem="qPs-2i-QwQ" secondAttribute="trailing" id="cgi-ba-BFE"/>
+                                                    <constraint firstItem="qPs-2i-QwQ" firstAttribute="leading" secondItem="HvB-5k-pU9" secondAttribute="leading" id="eAd-fx-qUG"/>
+                                                    <constraint firstItem="qPs-2i-QwQ" firstAttribute="top" secondItem="HvB-5k-pU9" secondAttribute="top" constant="8" id="jzg-tl-l3q"/>
+                                                    <constraint firstAttribute="height" constant="300" id="szJ-ys-87N"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yHc-RS-QQA">
+                                                <rect key="frame" x="0.0" y="4385" width="414" height="570"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTe-Su-3H6">
+                                                        <rect key="frame" x="8" y="69" width="398" height="406"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="406" id="Fk8-Wb-h9W"/>
+                                                        </constraints>
+                                                        <string key="text">Psychologist Derald W. Sue defines microaggressions as “The everyday slights, indignities, put-downs and insults that people of colour, women, LGBT populations or those who are marginalized experiences in their day-to-day interactions with people.”
+
+Microaggressions often might seem like a compliment or a joke but contain hidden insults, in this context based on someone’s identity. So, when someone says, “You don’t look gay,” or “You’re Asian so you must be smart,” or “Your English is really good,” or “You’re pretty for a black girl,” that’s a microaggression.
+
+They continue as a way of covertly reinforcing white supremacy in our day-to-day systems and society. Harvard professor Chester M. Pierce coined the term in the 1970s, specifically in the context of interactions between white and Black people.</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <color key="textColor" red="1" green="0.97407053789999998" blue="0.85029081220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Microaggressions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cV1-2z-wIV">
+                                                        <rect key="frame" x="0.0" y="8" width="414" height="53"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="53" id="InD-0h-Emd"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="0.9433959126" green="0.25474584099999997" blue="0.25733557340000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DK8-Xn-Rbr">
+                                                        <rect key="frame" x="8" y="483" width="398" height="94"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="94" id="3xO-Z2-1cB"/>
+                                                        </constraints>
+                                                        <string key="text">SOURCE:
+1. The Huffington Post, “What Does 'Systemic Racism' Mean? 20 Terms To Help You Understand Allyship”</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                        <color key="textColor" red="0.8197387075" green="0.45122584939999999" blue="0.1007166719" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.92846894260000001" green="0.60200011730000003" blue="0.29061165449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.99933081869999996" green="0.66954147819999998" blue="0.2523943186" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="fTe-Su-3H6" secondAttribute="trailing" constant="8" id="00M-9U-PmB"/>
+                                                    <constraint firstAttribute="trailing" secondItem="cV1-2z-wIV" secondAttribute="trailing" id="12u-SD-EiE"/>
+                                                    <constraint firstAttribute="height" constant="570" id="2fP-QY-hww"/>
+                                                    <constraint firstAttribute="trailing" secondItem="DK8-Xn-Rbr" secondAttribute="trailing" constant="8" id="Ce3-NO-Gq5"/>
+                                                    <constraint firstItem="cV1-2z-wIV" firstAttribute="top" secondItem="yHc-RS-QQA" secondAttribute="top" constant="8" id="M3z-Zj-ja9"/>
+                                                    <constraint firstItem="fTe-Su-3H6" firstAttribute="top" secondItem="cV1-2z-wIV" secondAttribute="bottom" constant="8" id="Wte-ad-X5E"/>
+                                                    <constraint firstItem="DK8-Xn-Rbr" firstAttribute="leading" secondItem="yHc-RS-QQA" secondAttribute="leading" constant="8" id="fV2-BJ-Rg8"/>
+                                                    <constraint firstItem="DK8-Xn-Rbr" firstAttribute="top" secondItem="fTe-Su-3H6" secondAttribute="bottom" constant="8" id="jGJ-zh-aOx"/>
+                                                    <constraint firstItem="fTe-Su-3H6" firstAttribute="leading" secondItem="yHc-RS-QQA" secondAttribute="leading" constant="8" id="ndd-JL-yd4"/>
+                                                    <constraint firstItem="cV1-2z-wIV" firstAttribute="leading" secondItem="yHc-RS-QQA" secondAttribute="leading" id="tlo-Z3-b8W"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g3t-1r-s8v">
+                                                <rect key="frame" x="0.0" y="4955" width="414" height="480"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S8F-zH-Uu0">
+                                                        <rect key="frame" x="8" y="69" width="398" height="313"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="313" id="eIg-va-BUG"/>
+                                                        </constraints>
+                                                        <string key="text">Acronym for “person of color” or “Black, Indigenous or person of color,” usually used to refer to people who identify or are perceived as non-white. Many choose to use BIPOC to highlight the unique experiences of Black or Indigenous people independent of other people of color, and push back against a definition of people as “one-size-fits-all.” 
+
+There’s a dark history of the phrase “colored people” to refer to Black people during periods of segregation in the U.S. Many people also prefer “person of color” because it foregrounds personhood as opposed to the social perception of race.</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <color key="textColor" red="1" green="0.97407053789999998" blue="0.85029081220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POC or BIPOC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWd-JS-t12">
+                                                        <rect key="frame" x="0.0" y="8" width="414" height="53"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="53" id="iXl-he-FN3"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="0.9433959126" green="0.25474584099999997" blue="0.25733557340000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pIM-VG-huq">
+                                                        <rect key="frame" x="8" y="390" width="398" height="94"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="94" id="2NN-aH-eEw"/>
+                                                        </constraints>
+                                                        <string key="text">SOURCE:
+1. The Huffington Post, “What Does 'Systemic Racism' Mean? 20 Terms To Help You Understand Allyship”</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                        <color key="textColor" red="0.8197387075" green="0.45122584939999999" blue="0.1007166719" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.92846894260000001" green="0.60200011730000003" blue="0.29061165449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.99933081869999996" green="0.66954147819999998" blue="0.2523943186" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="mWd-JS-t12" secondAttribute="trailing" id="1or-ay-Soz"/>
+                                                    <constraint firstItem="mWd-JS-t12" firstAttribute="leading" secondItem="g3t-1r-s8v" secondAttribute="leading" id="B4J-bG-wxp"/>
+                                                    <constraint firstItem="pIM-VG-huq" firstAttribute="top" secondItem="S8F-zH-Uu0" secondAttribute="bottom" constant="8" id="C9l-qa-zCR"/>
+                                                    <constraint firstAttribute="trailing" secondItem="S8F-zH-Uu0" secondAttribute="trailing" constant="8" id="Fux-CX-bfr"/>
+                                                    <constraint firstAttribute="height" constant="480" id="QT2-vU-Q7p"/>
+                                                    <constraint firstItem="pIM-VG-huq" firstAttribute="leading" secondItem="g3t-1r-s8v" secondAttribute="leading" constant="8" id="VmX-3f-Ogp"/>
+                                                    <constraint firstItem="mWd-JS-t12" firstAttribute="top" secondItem="g3t-1r-s8v" secondAttribute="top" constant="8" id="h6X-qn-rJe"/>
+                                                    <constraint firstItem="S8F-zH-Uu0" firstAttribute="leading" secondItem="g3t-1r-s8v" secondAttribute="leading" constant="8" id="rFM-xf-l5t"/>
+                                                    <constraint firstAttribute="trailing" secondItem="pIM-VG-huq" secondAttribute="trailing" constant="8" id="rXy-0d-q6g"/>
+                                                    <constraint firstItem="S8F-zH-Uu0" firstAttribute="top" secondItem="mWd-JS-t12" secondAttribute="bottom" constant="8" id="ycJ-kz-l6u"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ozS-hR-YRp">
+                                                <rect key="frame" x="0.0" y="5435" width="414" height="310"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKv-hL-cDj">
+                                                        <rect key="frame" x="8" y="69" width="398" height="161"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="161" id="fm4-j2-Jav"/>
+                                                        </constraints>
+                                                        <string key="text">Originally used as a pejorative slur, queer has now become an umbrella term to describe the myriad ways people reject binary categories of gender and sexual orientation to express who they are. People who identify as queer embrace identities and sexual orientations outside of mainstream heterosexual and gender norms.</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <color key="textColor" red="1" green="0.97407053789999998" blue="0.85029081220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZi-Ai-iaD">
+                                                        <rect key="frame" x="0.0" y="8" width="414" height="53"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="53" id="cRL-4d-6AC"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="0.9433959126" green="0.25474584099999997" blue="0.25733557340000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvQ-2q-qY8">
+                                                        <rect key="frame" x="8" y="238" width="398" height="94"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="94" id="HaP-P5-mdR"/>
+                                                        </constraints>
+                                                        <string key="text">SOURCE:
+1. USA Today, “LGBTQ definitions every good ally should know”
+</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                        <color key="textColor" red="0.8197387075" green="0.45122584939999999" blue="0.1007166719" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.92846894260000001" green="0.60200011730000003" blue="0.29061165449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.99933081869999996" green="0.66954147819999998" blue="0.2523943186" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="JKv-hL-cDj" secondAttribute="trailing" constant="8" id="7Eh-hh-0NT"/>
+                                                    <constraint firstItem="JKv-hL-cDj" firstAttribute="top" secondItem="OZi-Ai-iaD" secondAttribute="bottom" constant="8" id="Dhr-Yw-akE"/>
+                                                    <constraint firstAttribute="trailing" secondItem="fvQ-2q-qY8" secondAttribute="trailing" constant="8" id="FWg-Kg-KfL"/>
+                                                    <constraint firstItem="fvQ-2q-qY8" firstAttribute="leading" secondItem="ozS-hR-YRp" secondAttribute="leading" constant="8" id="H0l-Vi-Vpd"/>
+                                                    <constraint firstAttribute="height" constant="310" id="InU-Uc-4Hq"/>
+                                                    <constraint firstItem="OZi-Ai-iaD" firstAttribute="leading" secondItem="ozS-hR-YRp" secondAttribute="leading" id="Phd-Km-JKE"/>
+                                                    <constraint firstItem="JKv-hL-cDj" firstAttribute="leading" secondItem="ozS-hR-YRp" secondAttribute="leading" constant="8" id="S70-It-hcv"/>
+                                                    <constraint firstAttribute="trailing" secondItem="OZi-Ai-iaD" secondAttribute="trailing" id="YbU-zx-Ko9"/>
+                                                    <constraint firstItem="OZi-Ai-iaD" firstAttribute="top" secondItem="ozS-hR-YRp" secondAttribute="top" constant="8" id="mJY-1i-ddk"/>
+                                                    <constraint firstItem="fvQ-2q-qY8" firstAttribute="top" secondItem="JKv-hL-cDj" secondAttribute="bottom" constant="8" id="u3t-d0-Nld"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ayJ-dY-AgA">
+                                                <rect key="frame" x="0.0" y="5745" width="414" height="350"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7mZ-5x-AFB">
+                                                        <rect key="frame" x="8" y="69" width="398" height="188"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="188" id="65Y-df-Mep"/>
+                                                        </constraints>
+                                                        <string key="text">The Ontario Human Rights Commission defines racial profiling as “any action undertaken for reasons of safety, security or public protection that relies on stereotypes about race, colour, ethnicity, ancestry, religion or place of origin.” So for example, police arresting or treating one racial group differently than another — assuming one type of person would commit crimes where others wouldn’t — would constitute racial profiling.</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <color key="textColor" red="1" green="0.97407053789999998" blue="0.85029081220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Racial Profiling" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSt-Hm-LIk">
+                                                        <rect key="frame" x="0.0" y="8" width="414" height="53"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="53" id="pMQ-gB-7bG"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="0.9433959126" green="0.25474584099999997" blue="0.25733557340000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65f-K9-b6P">
+                                                        <rect key="frame" x="8" y="265" width="398" height="94"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="94" id="93B-eO-6W8"/>
+                                                        </constraints>
+                                                        <string key="text">SOURCE:
+1. The Huffington Post, “What Does 'Systemic Racism' Mean? 20 Terms To Help You Understand Allyship”</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                        <color key="textColor" red="0.8197387075" green="0.45122584939999999" blue="0.1007166719" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.92846894260000001" green="0.60200011730000003" blue="0.29061165449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.99933081869999996" green="0.66954147819999998" blue="0.2523943186" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="fSt-Hm-LIk" firstAttribute="top" secondItem="ayJ-dY-AgA" secondAttribute="top" constant="8" id="0ES-Xf-j8D"/>
+                                                    <constraint firstAttribute="trailing" secondItem="7mZ-5x-AFB" secondAttribute="trailing" constant="8" id="36U-ai-dbh"/>
+                                                    <constraint firstAttribute="trailing" secondItem="fSt-Hm-LIk" secondAttribute="trailing" id="3rY-vo-AJH"/>
+                                                    <constraint firstItem="7mZ-5x-AFB" firstAttribute="leading" secondItem="ayJ-dY-AgA" secondAttribute="leading" constant="8" id="XCO-Ca-Zlc"/>
+                                                    <constraint firstItem="fSt-Hm-LIk" firstAttribute="leading" secondItem="ayJ-dY-AgA" secondAttribute="leading" id="bG4-tM-dXy"/>
+                                                    <constraint firstItem="65f-K9-b6P" firstAttribute="leading" secondItem="ayJ-dY-AgA" secondAttribute="leading" constant="8" id="h9m-r4-q9G"/>
+                                                    <constraint firstAttribute="trailing" secondItem="65f-K9-b6P" secondAttribute="trailing" constant="8" id="m7v-Vr-FeT"/>
+                                                    <constraint firstAttribute="height" constant="350" id="q73-Fk-b3V"/>
+                                                    <constraint firstItem="7mZ-5x-AFB" firstAttribute="top" secondItem="fSt-Hm-LIk" secondAttribute="bottom" constant="8" id="t4L-s4-rxh"/>
+                                                    <constraint firstItem="65f-K9-b6P" firstAttribute="top" secondItem="7mZ-5x-AFB" secondAttribute="bottom" constant="8" id="wG8-Wn-eAE"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a8y-vD-uBR">
+                                                <rect key="frame" x="0.0" y="6095" width="414" height="680"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YDj-Zx-nH8">
+                                                        <rect key="frame" x="8" y="69" width="398" height="505"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="505" id="Lb1-UB-1s0"/>
+                                                        </constraints>
+                                                        <string key="text">“Systemic racism,” or “institutional racism,” refers to how racist ideas are built into the very systems of how our society operates. This can include everything from laws to hiring practises to our education systems. Our courts system and the media can disproportionally disadvantage people of colour. 
+
+Institutional racism refers specifically to the ways in which institutional policies and practices create different outcomes for different racial groups. The institutional policies may never mention any racial group, but their effect is to create advantages for whites and oppression and disadvantage for people from groups classified as people of color. 
+
+Examples:
+1. Government policies that explicitly restricted the ability of people to get loans to buy or improve their homes in neighborhoods with high concentrations of African Americans (also known as "red-lining"). 
+2. City sanitation department policies that concentrate trash transfer stations and other environmental hazards disproportionately in communities of color.</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <color key="textColor" red="1" green="0.97407053789999998" blue="0.85029081220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Systemic Racism" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4n1-wY-ThQ">
+                                                        <rect key="frame" x="0.0" y="8" width="414" height="53"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="53" id="4ii-ta-m4v"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="0.9433959126" green="0.25474584099999997" blue="0.25733557340000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hHc-PN-FXU">
+                                                        <rect key="frame" x="8" y="582" width="398" height="94"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="94" id="JZ5-WR-RH6"/>
+                                                        </constraints>
+                                                        <string key="text">SOURCE:
+1. The Huffington Post, “What Does 'Systemic Racism' Mean? 20 Terms To Help You Understand Allyship”
+2. Flipping the Script: White Privilege and Community Building. Maggie Potapchuk, Sally Leiderman, Donna Bivens and Barbara Major. 2005.</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                        <color key="textColor" red="0.8197387075" green="0.45122584939999999" blue="0.1007166719" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.92846894260000001" green="0.60200011730000003" blue="0.29061165449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.99933081869999996" green="0.66954147819999998" blue="0.2523943186" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="4n1-wY-ThQ" secondAttribute="trailing" id="4Cj-iK-5Kg"/>
+                                                    <constraint firstAttribute="trailing" secondItem="hHc-PN-FXU" secondAttribute="trailing" constant="8" id="AWs-YI-el3"/>
+                                                    <constraint firstItem="YDj-Zx-nH8" firstAttribute="top" secondItem="4n1-wY-ThQ" secondAttribute="bottom" constant="8" id="JvW-SC-nU2"/>
+                                                    <constraint firstItem="hHc-PN-FXU" firstAttribute="leading" secondItem="a8y-vD-uBR" secondAttribute="leading" constant="8" id="W0J-ue-L2y"/>
+                                                    <constraint firstItem="4n1-wY-ThQ" firstAttribute="leading" secondItem="a8y-vD-uBR" secondAttribute="leading" id="flw-Hs-q5C"/>
+                                                    <constraint firstAttribute="trailing" secondItem="YDj-Zx-nH8" secondAttribute="trailing" constant="8" id="jzg-gR-5U2"/>
+                                                    <constraint firstItem="4n1-wY-ThQ" firstAttribute="top" secondItem="a8y-vD-uBR" secondAttribute="top" constant="8" id="n1i-Au-lM6"/>
+                                                    <constraint firstItem="hHc-PN-FXU" firstAttribute="top" secondItem="YDj-Zx-nH8" secondAttribute="bottom" constant="8" id="pqE-je-Pg8"/>
+                                                    <constraint firstItem="YDj-Zx-nH8" firstAttribute="leading" secondItem="a8y-vD-uBR" secondAttribute="leading" constant="8" id="wvv-HN-Mq4"/>
+                                                    <constraint firstAttribute="height" constant="680" id="zX0-Cr-aXK"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Onp-W5-Obe">
+                                                <rect key="frame" x="0.0" y="6775" width="414" height="405"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TvE-0Y-ONk">
+                                                        <rect key="frame" x="8" y="69" width="398" height="253"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="253" id="7R5-GE-QY2"/>
+                                                        </constraints>
+                                                        <string key="text">Also known as unconscious or hidden bias, implicit biases are negative associations that people unknowingly hold. They are expressed automatically, without conscious awareness. Many studies have indicated that implicit biases affect individuals’ attitudes and actions, thus creating real-world implications, even though individuals may not even be aware that those biases exist within themselves. The Implicit Association Test (IAT) is often used to measure implicit biases with regard to race, gender, sexual orientation, age, religion, and other topics.</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <color key="textColor" red="1" green="0.97407053789999998" blue="0.85029081220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unconscious Bias" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h6v-PW-gRz">
+                                                        <rect key="frame" x="0.0" y="8" width="414" height="53"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="53" id="m7Y-ZW-5pu"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="0.9433959126" green="0.25474584099999997" blue="0.25733557340000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26S-bE-XEs">
+                                                        <rect key="frame" x="8" y="330" width="398" height="94"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="94" id="Xvf-XA-gvd"/>
+                                                        </constraints>
+                                                        <string key="text">SOURCE:
+1. State of the Science Implicit Bias Review 2013, Cheryl Staats, Kirwan Institute, The Ohio State University.
+</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                        <color key="textColor" red="0.8197387075" green="0.45122584939999999" blue="0.1007166719" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.92846894260000001" green="0.60200011730000003" blue="0.29061165449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.99933081869999996" green="0.66954147819999998" blue="0.2523943186" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="26S-bE-XEs" firstAttribute="top" secondItem="TvE-0Y-ONk" secondAttribute="bottom" constant="8" id="2ji-XP-dhW"/>
+                                                    <constraint firstAttribute="trailing" secondItem="26S-bE-XEs" secondAttribute="trailing" constant="8" id="CRn-dC-HPO"/>
+                                                    <constraint firstItem="TvE-0Y-ONk" firstAttribute="leading" secondItem="Onp-W5-Obe" secondAttribute="leading" constant="8" id="Eyj-zR-Gct"/>
+                                                    <constraint firstItem="TvE-0Y-ONk" firstAttribute="top" secondItem="h6v-PW-gRz" secondAttribute="bottom" constant="8" id="HYs-QQ-gDR"/>
+                                                    <constraint firstItem="26S-bE-XEs" firstAttribute="leading" secondItem="Onp-W5-Obe" secondAttribute="leading" constant="8" id="Jpk-hC-Ixb"/>
+                                                    <constraint firstAttribute="height" constant="405" id="P4n-ai-kyG"/>
+                                                    <constraint firstAttribute="trailing" secondItem="h6v-PW-gRz" secondAttribute="trailing" id="VIR-El-BwG"/>
+                                                    <constraint firstItem="h6v-PW-gRz" firstAttribute="top" secondItem="Onp-W5-Obe" secondAttribute="top" constant="8" id="jFh-fa-ICD"/>
+                                                    <constraint firstAttribute="trailing" secondItem="TvE-0Y-ONk" secondAttribute="trailing" constant="8" id="mxX-8a-zFC"/>
+                                                    <constraint firstItem="h6v-PW-gRz" firstAttribute="leading" secondItem="Onp-W5-Obe" secondAttribute="leading" id="zTC-xD-4Cn"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WYC-2D-6ow">
+                                                <rect key="frame" x="0.0" y="7180" width="414" height="500"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfp-Xk-BS2">
+                                                        <rect key="frame" x="8" y="69" width="398" height="287"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="287" id="UeK-ds-npz"/>
+                                                        </constraints>
+                                                        <string key="text">White privilege is an often invisible force in society that dictates certain privileges, opportunities and advantages white, or white-passing people have compared to Black people and other people of color in society. 
+
+It’s not the suggestion that white people have never faced difficulties or struggle, or that their accomplishments are unearned. White privilege is recognizing the greater access to power and opportunity often afforded to white people compared to BIPOC, and if they were oppressed it has reasons that have nothing to do with their skin color.</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <color key="textColor" red="1" green="0.97407053789999998" blue="0.85029081220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="White Privilege" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2D-2n-uVG">
+                                                        <rect key="frame" x="0.0" y="8" width="414" height="53"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="53" id="QOr-kf-pqP"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="0.9433959126" green="0.25474584099999997" blue="0.25733557340000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XRq-Zt-znY">
+                                                        <rect key="frame" x="8" y="364" width="398" height="94"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="94" id="FYy-wo-ZUA"/>
+                                                        </constraints>
+                                                        <string key="text">SOURCE:
+1. The Huffington Post, “What Does 'Systemic Racism' Mean? 20 Terms To Help You Understand Allyship”
+</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                        <color key="textColor" red="0.8197387075" green="0.45122584939999999" blue="0.1007166719" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.92846894260000001" green="0.60200011730000003" blue="0.29061165449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.99933081869999996" green="0.66954147819999998" blue="0.2523943186" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="bfp-Xk-BS2" firstAttribute="top" secondItem="f2D-2n-uVG" secondAttribute="bottom" constant="8" id="45I-G7-xmP"/>
+                                                    <constraint firstAttribute="trailing" secondItem="bfp-Xk-BS2" secondAttribute="trailing" constant="8" id="AYv-vO-UgX"/>
+                                                    <constraint firstAttribute="trailing" secondItem="f2D-2n-uVG" secondAttribute="trailing" id="HF5-eV-Xg8"/>
+                                                    <constraint firstItem="f2D-2n-uVG" firstAttribute="leading" secondItem="WYC-2D-6ow" secondAttribute="leading" id="Jux-27-9nN"/>
+                                                    <constraint firstAttribute="height" constant="500" id="ZEQ-J2-IEk"/>
+                                                    <constraint firstItem="bfp-Xk-BS2" firstAttribute="leading" secondItem="WYC-2D-6ow" secondAttribute="leading" constant="8" id="cpZ-Ot-9v6"/>
+                                                    <constraint firstItem="XRq-Zt-znY" firstAttribute="leading" secondItem="WYC-2D-6ow" secondAttribute="leading" constant="8" id="hNt-7Y-2UN"/>
+                                                    <constraint firstItem="XRq-Zt-znY" firstAttribute="top" secondItem="bfp-Xk-BS2" secondAttribute="bottom" constant="8" id="pYF-So-h4B"/>
+                                                    <constraint firstItem="f2D-2n-uVG" firstAttribute="top" secondItem="WYC-2D-6ow" secondAttribute="top" constant="8" id="tLY-XF-Ct2"/>
+                                                    <constraint firstAttribute="trailing" secondItem="XRq-Zt-znY" secondAttribute="trailing" constant="8" id="yuV-n9-8pC"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="QCp-iB-l8n" firstAttribute="bottom" secondItem="MzP-At-pxb" secondAttribute="bottom" id="4pY-ef-q88"/>
+                                    <constraint firstItem="QCp-iB-l8n" firstAttribute="trailing" secondItem="MzP-At-pxb" secondAttribute="trailing" id="Rud-zz-bwA"/>
+                                    <constraint firstItem="QCp-iB-l8n" firstAttribute="leading" secondItem="MzP-At-pxb" secondAttribute="leading" id="esj-0c-jdW"/>
+                                    <constraint firstItem="QCp-iB-l8n" firstAttribute="top" secondItem="MzP-At-pxb" secondAttribute="top" id="mnR-BC-nbg"/>
+                                    <constraint firstItem="QCp-iB-l8n" firstAttribute="width" secondItem="DU6-w1-V1b" secondAttribute="width" id="n7y-kn-lPk"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="MzP-At-pxb"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="DU6-w1-V1b"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="UJO-17-SrQ" secondAttribute="bottom" id="Apo-Kt-EMj"/>
+                            <constraint firstItem="UJO-17-SrQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="UET-V8-zLA"/>
+                            <constraint firstItem="UJO-17-SrQ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="kmy-bO-OMP"/>
+                            <constraint firstItem="UJO-17-SrQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="spT-ZT-1zi"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="definition1" destination="AD6-ED-a2y" id="IMZ-7y-PWe"/>
+                        <outlet property="definition10" destination="S8F-zH-Uu0" id="AbP-zM-yjW"/>
+                        <outlet property="definition11" destination="JKv-hL-cDj" id="kHA-sq-HHi"/>
+                        <outlet property="definition12" destination="7mZ-5x-AFB" id="RjY-Mm-2kp"/>
+                        <outlet property="definition13" destination="YDj-Zx-nH8" id="Tgm-Y4-2af"/>
+                        <outlet property="definition14" destination="TvE-0Y-ONk" id="GPv-Ko-UI2"/>
+                        <outlet property="definition15" destination="bfp-Xk-BS2" id="QZd-rk-lZu"/>
+                        <outlet property="definition2" destination="WwT-LA-WoA" id="WCq-Jb-b7n"/>
+                        <outlet property="definition3" destination="aYi-BT-TSb" id="mNe-SZ-2Qc"/>
+                        <outlet property="definition4" destination="Vy3-xn-Ub5" id="h73-Ci-sWe"/>
+                        <outlet property="definition5" destination="osd-HF-bpJ" id="tHX-iV-xXG"/>
+                        <outlet property="definition6" destination="xJT-xY-W0v" id="bfQ-dm-LRl"/>
+                        <outlet property="definition7" destination="sx1-ln-Mut" id="ltI-J9-It1"/>
+                        <outlet property="definition8" destination="2bu-W9-p6c" id="fys-oz-sWV"/>
+                        <outlet property="definition9" destination="fTe-Su-3H6" id="ejT-KT-hiL"/>
+                        <outlet property="source1" destination="5d4-2A-JsR" id="OZN-M0-hUQ"/>
+                        <outlet property="source10" destination="pIM-VG-huq" id="1ig-oy-gMH"/>
+                        <outlet property="source11" destination="fvQ-2q-qY8" id="qyX-SV-Cy1"/>
+                        <outlet property="source12" destination="65f-K9-b6P" id="BfD-mN-HF1"/>
+                        <outlet property="source13" destination="hHc-PN-FXU" id="pcT-Fl-Je5"/>
+                        <outlet property="source14" destination="26S-bE-XEs" id="2gR-CY-GOy"/>
+                        <outlet property="source15" destination="XRq-Zt-znY" id="Obm-O4-TIA"/>
+                        <outlet property="source2" destination="Mwl-hr-5AJ" id="Tcf-pD-ACR"/>
+                        <outlet property="source3" destination="QlC-T8-ryn" id="gem-jO-MQH"/>
+                        <outlet property="source4" destination="JIQ-qd-sbz" id="e6x-Ef-QYc"/>
+                        <outlet property="source5" destination="82c-yd-xeY" id="o56-Dt-Yhd"/>
+                        <outlet property="source6" destination="K8z-XK-ZW8" id="LeL-wS-ckn"/>
+                        <outlet property="source7" destination="4Ac-9q-5zh" id="oh2-0h-zBy"/>
+                        <outlet property="source8" destination="mXP-fb-0ST" id="8vw-tC-YeX"/>
+                        <outlet property="source9" destination="DK8-Xn-Rbr" id="DuQ-RR-INj"/>
+                        <outlet property="subLabel" destination="nK0-wG-VJA" id="eEa-Zy-4HP"/>
+                        <outlet property="title1" destination="j2i-T7-IAI" id="2lr-hL-blZ"/>
+                        <outlet property="title10" destination="mWd-JS-t12" id="yoS-9X-4XF"/>
+                        <outlet property="title11" destination="OZi-Ai-iaD" id="blz-zf-skm"/>
+                        <outlet property="title12" destination="fSt-Hm-LIk" id="bXs-lR-Wds"/>
+                        <outlet property="title13" destination="4n1-wY-ThQ" id="iHq-wI-Rj2"/>
+                        <outlet property="title14" destination="h6v-PW-gRz" id="m56-rX-6jc"/>
+                        <outlet property="title15" destination="f2D-2n-uVG" id="2we-Kz-Oys"/>
+                        <outlet property="title2" destination="NT9-LX-sjI" id="aO5-aI-DyO"/>
+                        <outlet property="title3" destination="IW2-vf-897" id="g2m-Lh-JAK"/>
+                        <outlet property="title4" destination="e8S-8z-yYh" id="Hkh-9h-Tfx"/>
+                        <outlet property="title5" destination="iO1-1W-GUU" id="Ce1-gg-ZRW"/>
+                        <outlet property="title6" destination="QPG-na-GYk" id="4bW-F3-5cl"/>
+                        <outlet property="title7" destination="x2D-hw-hxn" id="tpo-Se-HEm"/>
+                        <outlet property="title8" destination="qPs-2i-QwQ" id="in0-Ap-vdN"/>
+                        <outlet property="title9" destination="cV1-2z-wIV" id="hXH-CR-cPh"/>
+                        <outlet property="titleLabel" destination="ghc-kW-AWy" id="ORa-6P-UEZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="100.44642857142857"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="arrow.down.doc" catalog="system" width="115" height="128"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="square" catalog="system" width="128" height="114"/>
+    </resources>
 </document>

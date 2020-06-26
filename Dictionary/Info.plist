@@ -60,5 +60,13 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Walkway Bold.ttf</string>
+		<string>Walkway Expand UltraBold.ttf</string>
+		<string>Walkway Expand.ttf</string>
+		<string>Walkway Condensed SemiBold.ttf</string>
+		<string>Walkway Black.ttf</string>
+	</array>
 </dict>
 </plist>
